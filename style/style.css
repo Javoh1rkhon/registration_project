@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +7,8 @@
     outline: none;
     text-decoration: none;
     list-style: none;
+    font-family: 'Oswald', sans-serif;
+  
   }
 
   .container {
@@ -24,18 +28,65 @@
   }
 
   .container .login input {
-    width: 400px;
-    height: 40px;
+    width: 450px;
+    height: 60x;
     font-size: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+  }
+  
+  .container .login #inp {
+    border: 5px double #d9bc17f4;
+    border-radius: 10px;
+    /* background-color: rgb(rgba(236, 58, 58, 0.9), rgba(37, 112, 37, 0.933), rgba(77, 77, 143, 0.867)); */
+    animation: fade 1.5s infinite;
+  }
+
+  @keyframes fade {
+    from{
+      opacity: 0.1;
+    } to {
+      opacity: 1;
+    }
   }
 
   .container .login button {
-    width: 400px;
-    height: 40px;
-    font-size: 30px;
-    background-color: dodgerblue;
+    width: 450px;
+    height: 60px;
+    font-size:  40px;
+    border-radius: 15px;
+    background-color: rgba(54, 54, 54, 0.852);
+    border:10px double #d9bc17f4;
+    border-radius: 10px;
+    animation: fade 1.5s infinite;
+  }
+  
+  .container .login #password {
+    background-color: rgba(45, 45, 45, 0.937);
+    border:10px double #d96e17f4;
+    border-radius: 10px;
+    animation: fade 1.5s infinite linear;
+  }
+
+  .container .login #email {
+    background-color: rgba(45, 45, 45, 0.937);
+    border:10px double #d96e17f4;
+    border-radius: 10px;
+    animation: fade 1.5s infinite;
+  }
+
+  .container .login .sendLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .firstBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   h1 {
